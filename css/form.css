@@ -1,0 +1,370 @@
+@import url('font-awesome.css');
+
+
+.wrapper{
+    margin:20px auto;
+}
+
+.box{
+    width:49%;
+}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+.clear{
+    clear:both;
+}
+
+/* Form Style */
+#custom_login_form .form_wrapper{
+    background:#fff;
+    border:1px solid #ddd;
+    margin:0 auto;
+    width:350px;
+    font-size:16px;
+    -moz-box-shadow:1px 1px 7px #ccc;
+    -webkit-box-shadow:1px 1px 7px #ccc;
+    box-shadow:1px 1px 7px #ccc;
+}
+#custom_login_form .form_wrapper h3{
+    padding:20px 30px 20px 30px;
+    background-color:#444;
+    color:#fff;
+    font-size:25px;
+    border-bottom:1px solid #ddd;
+}
+#custom_login_form .form_wrapper form{
+    display:none;
+    background:#fff;
+}
+#custom_login_form .form_wrapper .column{
+    width:47%;
+    float:left;
+}
+#custom_login_form form.active{
+    display:block;
+}
+#custom_login_form form{
+    width:350px;
+}
+#custom_login_form form.register{
+    width:550px;
+}
+#custom_login_form form.forgot_password{
+    width:300px;
+}
+#custom_login_form .form_wrapper a{
+    text-decoration:none;
+    color:#777;
+    font-size:12px;
+}
+#custom_login_form .form_wrapper a:hover{
+    color:#000;
+}
+#custom_login_form .form_wrapper label{
+    display:block;
+    padding:10px 30px 0px 30px;
+    margin:10px 0px 0px 0px;
+    color:#616161;
+}
+#custom_login_form .form_wrapper input[type="text"],
+#custom_login_form .form_wrapper input[type="password"]{
+    border: solid 1px #E5E5E5;
+    background: #FFFFFF;
+    margin: 5px 30px 0px 30px;
+    padding: 9px;
+    display:block;
+    font-size:16px;
+    width:76%;
+    background: 
+        -webkit-gradient(
+            linear,
+            left top,
+            left 25,
+            from(#FFFFFF),
+            color-stop(4%, #EEEEEE),
+            to(#FFFFFF)
+        );
+    background: 
+        -moz-linear-gradient(
+            top,
+            #FFFFFF,
+            #EEEEEE 1px,
+            #FFFFFF 25px
+            );
+    -moz-box-shadow: 0px 0px 8px #f0f0f0;
+    -webkit-box-shadow: 0px 0px 8px #f0f0f0;
+    box-shadow: 0px 0px 8px #f0f0f0;
+}
+#custom_login_form .form_wrapper input[type="text"]:focus,
+#custom_login_form .form_wrapper input[type="password"]:focus{
+    background:#feffef;
+}
+#custom_login_form .form_wrapper .bottom{
+    background-color:#444;
+    border-top:1px solid #ddd;
+    margin-top:22px;
+    clear:both;
+    color:#fff;
+    text-shadow:1px 1px 1px #000;
+}
+#custom_login_form .form_wrapper .bottom a{
+    display:block;
+    clear:both;
+    padding:10px 30px;
+    text-align:right;
+    color:#ffa800;
+    text-shadow:1px 1px 1px #000;
+}
+#custom_login_form .form_wrapper a.forgot{
+    float:right;
+    font-style:italic;
+    line-height:24px;
+    color:#ffa800;
+    text-shadow:1px 1px 1px #fff;
+}
+#custom_login_form .form_wrapper a.forgot:hover{
+    color:#000;
+}
+#custom_login_form .form_wrapper div.remember{
+    float:left;
+    width:140px;
+    margin:20px 0px 20px 30px;
+    font-size:11px;
+}
+#custom_login_form .form_wrapper div.remember input{
+    float:left;
+    margin:2px 5px 0px 0px;
+}
+#custom_login_form .form_wrapper span.error{
+    visibility:hidden;
+    color:red;
+    font-size:11px;
+    font-style:italic;
+    display:block;
+    margin:4px 30px;
+}
+
+#custom_login_form .form_wrapper input[type="submit"] {
+    background: #e3e3e3;
+    border: 1px solid #ccc;
+    color: #333;
+    font-family: "Trebuchet MS", "Myriad Pro", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 0 9px;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    cursor:pointer;
+    float:right;
+    margin:15px 20px 10px 10px;
+    text-shadow: 0px 1px 0px #fff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: 0px 0px 2px #fff inset;
+    -webkit-box-shadow: 0px 0px 2px #fff inset;
+    box-shadow: 0px 0px 2px #fff inset;
+}
+#custom_login_form .form_wrapper input[type="submit"]:hover {
+    background: #d9d9d9;
+    -moz-box-shadow: 0px 0px 2px #eaeaea inset;
+    -webkit-box-shadow: 0px 0px 2px #eaeaea inset;
+    box-shadow: 0px 0px 2px #eaeaea inset;
+    color: #222;
+}
+
+
+
+
+/* Login Form */
+
+#custom_login_form .form-1 {
+    /* Size & position */
+    width: 350px;
+    height: 337px;
+    /*margin: 60px auto 30px;*/
+    /*padding: 10px;*/
+    position: relative; /* For the submit button positioning */
+
+    /* Styles */
+    box-shadow: 
+        0 0 1px rgba(0, 0, 0, 0.3), 
+        0 3px 7px rgba(0, 0, 0, 0.3), 
+        inset 0 1px rgba(255,255,255,1),
+        inset 0 -3px 2px rgba(0,0,0,0.25);
+    border-radius: 5px;
+    background: white; /* Fallback */
+    background: -moz-linear-gradient(#eeefef, #ffffff 10%);
+    background: -ms-linear-gradient(#eeefef, #ffffff 10%);
+    background: -o-linear-gradient(#eeefef, #ffffff 10%);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#eeefef), color-stop(0.1, #ffffff));
+    background: -webkit-linear-gradient(#eeefef, #ffffff 10%);
+    background: linear-gradient(#eeefef, #ffffff 10%);
+}
+
+#custom_login_form .form-1 .field {
+    position: relative; /* For the icon positioning */
+}
+
+#custom_login_form .form-1 .field i {
+    /* Size and position */
+    left: 10px;
+    top: 14px;
+    position: absolute;
+    height: 36px;
+    width: 36px;
+
+    /* Line */
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.7);
+
+    /* Styles */
+    color: #777777;
+    text-align: center;
+    line-height: 42px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    pointer-events: none;
+}
+
+
+#custom_login_form .form-1 input[type=email],
+#custom_login_form .form-1 input[type=text],
+#custom_login_form .form-1 input[type=password] {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    /* Size and position */
+    width: 266px;
+    height: 20px;
+    padding: 10px 18px 10px 45px;
+    margin-left: 10px;
+    margin-top: 14px;
+    /* Styles */
+    border: none; /* Remove the default border */
+    box-shadow: 
+        inset 0 0 5px rgba(0,0,0,0.1),
+        inset 0 3px 2px rgba(0,0,0,0.1);
+    border-radius: 3px;
+    background: #f9f9f9;
+    color: #777;
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+}
+
+#custom_login_form .form-1 input[type=text] {
+    margin-bottom: 10px;
+}
+
+#custom_login_form .form-1 input[type=email]:hover ~ i,
+#custom_login_form .form-1 input[type=text]:hover ~ i,
+#custom_login_form .form-1 input[type=password]:hover ~ i {
+    color: #52cfeb;
+}
+
+#custom_login_form .form-1 input[type=email]:focus ~ i,
+#custom_login_form .form-1 input[type=text]:focus ~ i,
+#custom_login_form .form-1 input[type=password]:focus ~ i {
+    color: #42A2BC;
+}
+
+#custom_login_form .form-1 input[type=email]:focus,
+#custom_login_form .form-1 input[type=text]:focus,
+#custom_login_form .form-1 input[type=password]:focus,
+#custom_login_form .form-1 button[type=submit]:focus {
+    outline: none;
+}
+
+#custom_login_form .form-1 .submit {
+    /* Size and position */
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 90px;
+    right: -25px;
+    padding: 10px;
+    z-index: 2;
+
+    /* Styles */
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 
+        0 0 2px rgba(0,0,0,0.1),
+        0 3px 2px rgba(0,0,0,0.1),
+        inset 0 -3px 2px rgba(0,0,0,0.2);
+}
+
+#custom_login_form .form-1 .submit:after {
+    /* Size and position */
+    content: "";
+    width: 0px !important;
+    height: 10px;
+    position: absolute;
+    top: -2px;
+    left: 30px;
+
+    /* Styles */
+    background: #ffffff;
+    
+    /* Other masks trick */
+    box-shadow: 0 62px white, -32px 31px white;
+}
+
+#custom_login_form .form-1 button {
+    /* Size and position */
+    width: 100%;
+    height: 100%;
+    margin-top: -1px;
+
+    /* Icon styles */
+    font-size: 1.4em;
+    line-height: 1.75;
+    color: white;
+
+    /* Styles */
+    border: none; /* Remove the default border */
+    border-radius: inherit;
+    background: #52cfeb; /* Fallback */
+    background: -moz-linear-gradient(#52cfeb, #42A2BC);
+    background: -ms-linear-gradient(#52cfeb, #42A2BC);
+    background: -o-linear-gradient(#52cfeb, #42A2BC);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#52cfeb), to(#42A2BC));
+    background: -webkit-linear-gradient(#52cfeb, #42A2BC);
+    background: linear-gradient(#52cfeb, #42A2BC);
+    box-shadow: 
+        inset 0 1px 0 rgba(255,255,255,0.3),
+        0 1px 2px rgba(0,0,0,0.35),
+        inset 0 3px 2px rgba(255,255,255,0.2),
+        inset 0 -3px 2px rgba(0,0,0,0.1);
+
+    cursor: pointer;
+}
+
+#custom_login_form .form-1 button:hover,
+#custom_login_form .form-1 button[type=submit]:focus {
+    background: #52cfeb;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+#custom_login_form .form-1 button:active {
+    background: #42A2BC;
+    box-shadow: 
+        inset 0 0 5px rgba(0,0,0,0.3),
+        inset 0 3px 4px rgba(0,0,0,0.3);
+}
